@@ -15,7 +15,7 @@
     <title>Web Studio</title>
   </head>
   <body>
-    <header>
+    <header class="page-header">
       <div class="container">
         <p class="logo" id="top"><span class="active">Web</span> Studio</p>
         <nav class="navigation">
@@ -28,13 +28,11 @@
           </ul>
         </nav>
         <ul class="contacts-list">
-          <li class="contacts-item">
-            <a href="mailto:info@devstudio.com"
-              ><img src="./images/envelope.svg" alt="Иконка конверта" /> info@devstudio.com</a
-            >
+          <li class="contacts-item icon-mail">
+            <a href="mailto:info@devstudio.com"> info@devstudio.com</a>
           </li>
-          <li class="contacts-item">
-            <a href="tel:+380961111111"><img src="./images/phone.svg" alt="Иконка телефона" /> +38 096 111 11 11</a>
+          <li class="contacts-item icon-phone">
+            <a href="tel:+380961111111"> +38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -42,47 +40,35 @@
     <main>
       <!-- Hero -->
       <section class="hero">
-        <!-- <img src="https://via.placeholder.com/1600x600" alt="" /> -->
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="button main">Заказать услугу</button>
+        <div class="container">
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="button main">Заказать услугу</button>
+        </div>
       </section>
       <!-- Features -->
       <section class="features">
         <div class="container">
-          <h2 class="title">Наши преимущества</h2>
-          <!--Спрятать заголовок-->
+          <h2 class="title visually-hidden">Наши преимущества</h2>
           <ul class="features-list">
-            <li class="features-item">
-              <div class="item-image">
-                <img src="./images/antenna.png" alt="Изображение антенны" />
-              </div>
+            <li class="features-item icon-antenna">
               <h3 class="item-title">Внимание к деталям</h3>
               <p class="item-text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="features-item">
-              <div class="item-image">
-                <img src="./images/clock.png" alt="Изображение часов" />
-              </div>
+            <li class="features-item icon-clock">
               <h3 class="item-title">Пунктуальность</h3>
               <p class="item-text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="features-item">
-              <div class="item-image">
-                <img src="./images/pc.png" alt="Изображение компьютера" />
-              </div>
+            <li class="features-item icon-diagram">
               <h3 class="item-title">Планирование</h3>
               <p class="item-text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="features-item">
-              <div class="item-image">
-                <img src="./images/spaceman.png" alt="Изображение космонавта" />
-              </div>
+            <li class="features-item icon-astronaut">
               <h3 class="item-title">Современные технологии</h3>
               <p class="item-text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -244,7 +230,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="page-footer">
       <div class="container">
         <div>
           <a class="logo" href="#top"><span class="active">Web</span> Studio</a>
