@@ -274,6 +274,10 @@ footer .container {
   margin-left: auto;
   margin-right: auto;
 }
+.hero .container {
+  margin: 0;
+  padding: 0;
+}
 
 .hero-title {
   color: #ffffff;
@@ -307,11 +311,6 @@ footer .container {
 
 /* Features */
 
-.features .title {
-  opacity: 0;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
 .visually-hidden {
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
@@ -326,6 +325,10 @@ footer .container {
 
 .features-list {
   display: flex;
+  justify-content: space-between;
+}
+.features-item {
+  width: 270px;
 }
 .features-item::before {
   content: '';
@@ -350,9 +353,6 @@ footer .container {
 .icon-astronaut::before {
   background-image: url('../images/astronaut.svg');
 }
-.features-item:not(:last-child) {
-  margin-right: 30px;
-}
 
 .features .item-title {
   line-height: 1.14;
@@ -368,10 +368,8 @@ footer .container {
   list-style-type: none;
 }
 .we-do a {
-  text-decoration: none;
-}
-.we-do img {
   display: block;
+  text-decoration: none;
 }
 .we-do-list {
   display: flex;
@@ -380,10 +378,6 @@ footer .container {
 .we-do-item {
   display: block;
   position: relative;
-}
-.we-do .item-image {
-  display: block;
-  background-color: unset;
 }
 .we-do .item-title {
   text-align: center;
